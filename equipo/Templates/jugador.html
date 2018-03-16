@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+	{% block titulo %}		
+	{% endblock %}
+
+	{% block contenedor %}
+	
+
+<table>
+	<caption>
+		Jugador
+	</caption>
+	<tr>
+		<td><h2>Nombre</h2></td>
+		<td><h2>Edad</h2></td>
+		<td><h2>Estatura</h2></td>
+		<td><h2>Pais</h2></td>
+		<td><h2>Equipo</h2></td>
+		<td><h2>Foto</h2></td>
+
+	</tr>
+
+	{% for l in lista  %}
+
+	<tr>
+		<td>
+			{{ l.nombre }}
+		</td>
+
+		<td>
+			{{ l.edad }}
+		</td>
+
+		<td>
+			{{ l.estatura }}
+		</td>
+
+		<td>
+			{{ l.pais }}
+		</td>
+
+		<td>
+			{{ l.equipo }}
+		</td>
+		<td>
+			<img src="/media/{{l.imagen}}" width="80" height="80">
+		</td>
+	</tr>
+
+	{% endfor %}
+
+</table>
+
+
+<a href="{% url 'vista_agregar_jugador' %}">
+<button>Agregar Jugador</button></a>
+<a href="{% url 'editar_jugador' %}">
+<button>Editar Jugador</button></a>
+
+
+	{% endblock %}

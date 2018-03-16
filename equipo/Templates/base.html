@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/static/css/estilo.css"/>
+	<title>
+		{% block titulo %}
+		{% endblock %}
+	</title>
+</head>
+<body>
+	<header>
+			<h1> BALONCESTO</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<a href="{% url 'vista_jugador' %}"><li>Jugador</li></a>
+				<a href="{% url 'vista_equipo' %}"><li>Equipo</li></a>
+				<a href="{% url 'vista_torneo' %}"><li>Torneo</li></a>
+			</ul>
+			
+		</nav>
+
+
+	{% block contenedor %}
+	
+	{% endblock %}
+
+</body>
+</html>

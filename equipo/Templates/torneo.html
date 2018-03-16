@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+	{% block titulo %}		
+	{% endblock %}
+
+	{% block contenedor %}
+	
+<table id="t3">
+
+	<caption>
+		Torneo
+	</caption>
+	
+	{% for l in torne%}
+
+	<tr>
+		<td>
+			{{ l.nombre }}
+		</td>
+		<td>
+			{{ l.lugar }}
+		</td>
+		<td>
+			{{ l.fecha }}
+		</td>
+
+	</tr>
+
+	{% endfor %}
+
+	{% endblock %}
+
+</table>
+
+	

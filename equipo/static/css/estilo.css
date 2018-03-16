@@ -1,0 +1,51 @@
+td{
+
+	border: 1px solid black;
+}
+caption{
+	font-weight: bold;
+	font-size: 200%;
+}
+table{
+	
+	margin: 0 0 2% 31%;
+  	border-collapse: separate;
+   	border-spacing: 2px;
+   	background: red url("gradient.gif") bottom left repeat-x;
+   	color: black;
+}
+td, th {
+   background: #fff;
+   color: #000;
+   font-size: 15px;
+   font-weight: bold;
+   
+}
+
+body{
+
+	background: #fff;
+	text-align: center;
+
+}
+nav{
+	background: #fff;
+	margin: 0 34%;
+
+}
+nav ul li{
+	display: inline-block;
+	margin: 0 6% 0 10%;	
+	font-family: cursive;
+	color: black;
+}
+
+header{
+	font-family: unset;
+}
+button{
+	background:black;
+	color: #fff;
+	font-size: 90%;
+}
+

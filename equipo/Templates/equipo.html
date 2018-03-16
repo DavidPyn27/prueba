@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+	{% block titulo %}		
+	{% endblock %}
+
+	{% block contenedor %}
+	
+
+<table id="t2">
+
+	<caption>
+		Equipo
+	</caption>
+	
+	{% for l in equi %}
+
+	<tr>
+		<td>
+			{{ l.nombre }}
+		</td>
+		<td>
+			{{ l.pais }}
+		</td>
+		<td>
+			{{ l.ciudad }}
+		</td>
+
+	</tr>
+
+	{% endfor %}
+
+	{% endblock %}
+
+</table>
+
+	
